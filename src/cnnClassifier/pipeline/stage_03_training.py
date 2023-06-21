@@ -1,5 +1,6 @@
 from cnnClassifier.config import ConfigurationManager
-from cnnClassifier.components import PrepareCallback, Training
+from cnnClassifier.components import PrepareCallback
+from cnnClassifier.components import Training
 from cnnClassifier import logger
 
 class ModelTrainingPipeline:
@@ -20,3 +21,4 @@ class ModelTrainingPipeline:
         training.train(
             callback_list=callback_list
         )
+        
